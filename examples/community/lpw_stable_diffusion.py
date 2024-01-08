@@ -888,6 +888,7 @@ class StableDiffusionLongPromptWeightingPipeline(
         is_cancelled_callback: Optional[Callable[[], bool]] = None,
         callback_steps: int = 1,
         cross_attention_kwargs: Optional[Dict[str, Any]] = None,
+        ref_image=None,
     ):
         r"""
         Function invoked when calling the pipeline for generation.
